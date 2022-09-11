@@ -1,4 +1,5 @@
 body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
   display: flex;
   flex-direction: column;
   line-height: 1.3;
@@ -8,157 +9,329 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1%;
-  background-color: #13293d;
-  color: #fff;
+  padding: 4px;
+  background-color: navy;
+  color: rgb(250, 4, 41);
+  height: 100px;
 }
 
 h1 {
   font-size: 200%;
-}
-
-h2 {
-  margin: 2% 0;
-  font-size: 250%;
+  padding-left: 40px;
+  padding-right: 20px;
+  color: navy;
+  background-color: rgb(253, 208, 9);
 }
 
 nav ul {
   display: flex;
   justify-content: space-between;
   min-width: 300px;
+  margin-right: 20px;
+}
+
+nav li a:hover {
+color: navy;
+background-color: rgb(253, 208, 9);
+}
+
+#footer a:hover {
+color: rgb(253, 208, 9);
+background-color: navy;
 }
 
 nav a {
-  color: #b9C6ae;
   font-weight: bold;
+  color: rgb(253, 208, 9);
   text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: solid 2pxrgb(253, 208, 9);
 }
 
-nav a:hover {
-  color: #fff;
-}
-
-main {
+.Little-Boxes {
   display: flex;
-  flex: 1 1 0;
-  max-width: 1200px;
-  margin: 2% auto;
-}
-
-article {
-  border-bottom: 1px solid #d8a47f;
-}
-
-article p {
-  margin: 2% 0;
-  font-size: 110%;
-}
-
-article ul {
-  margin-left: 5%;
-  font-size: 110%;
-  list-style: circle;
-}
-
-form {
-  max-width: 400px;
-}
-
-form h3 {
-  font-size: 150%;
-}
-
-form p {
-  margin: 3% 0;
-}
-
-label {
-  display: block;
-}
-
-button {
-  padding: 1% 2%;
-  color: #fff;
-  background-color: #13293d;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-/* What does this CSS rule do? */
-select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background-image: url("../images/arrow.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-}
-
-.text-input {
+  flex-direction: row;
+  background-image: url("/assets/Images/dark-blue.jpg");
+  height: 275px;
   width: 100%;
-  max-width: 100%;
+  margin-bottom: 25px;
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
-.text-input, select {
-  padding: 1%;
-  outline: none;
-  border: 1.2px solid #b9C6ae;
+.Cap-Box {
+  font-size: 150%;
+  background-color: rgb(253, 208, 9);
+  color: navy;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.text-input:hover, .checkbox:hover, 
-select:hover, button:hover {
-  box-shadow: 0 0 5px #999;
-}
-
-/* What does this pseudo-class mean? */
-.text-input:focus {
-  border-right-width: 5px;
-}
-
-/* What does this pseudo-class mean? */
-.text-input:placeholder-shown {
-  border-style: dashed;
-}
-
-.flex-row {
+section {
   display: flex;
+  margin-bottom: 30px;
+}
+
+.aboutme {
+display: flex;
+color:navy;
+margin-right: 15px;
+}
+
+.about-Me {
+height: 150px;
+padding-left: 15px;
+}
+
+p {
+padding-left: 15px;
+}
+
+img {
+height: 150px;
+}
+
+h2 {
+  margin-right: 20px;
+  padding-top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  font-size: 300%;
+  color: navy;
+  min-width: 300px;
+  text-align: end;
+  align-items: flex-start;
+  border-right: solid 4px navy;
+}
+
+.working {
+margin-bottom: 0;
+}
+.work {
+  height: 710px;
+}
+
+.Little-Box {
+  text-align: left;
+  font-size: 100%;
+ 
+  color: navy;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Pre-study {
+  display: flex;
+  flex-direction: column;
+  flex-grow: calc(1);
+}
+
+.worksection1 a{
+text-decoration: none;
+}
+
+.mainwork {
+  display: flex;
+  flex-direction: row;
+  background-image: url(/assets/Images/pup.jpg);
+  height: 350px;
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border: solid 4px rgb(245, 1, 38);
+  margin-right: 30px;
+}
+
+figure.mainwork, .project2, .project3, .project4, .project5 {
+background-color:rgb(252, 6, 43);
+opacity: .6;
+}
+figure.mainwork:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover {
+opacity: 1;
+}
+
+.project2 {
+  display: flex;
+  flex-direction: row;
+  flex-grow:1;
+  background-image: url(assets/Images/pup.jpeg);
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border: solid 4px rgb(253, 208, 9);
+  margin-right: 30px;
+
+}
+
+.work1 a {
+display: flex;
+flex-direction: row;
+flex-grow:1;
+background-position: center;
+justify-content: flex-start;
+align-items: flex-end;
+}
+
+.working2, .working3 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-grow: calc(1);
+}
+
+.project3 {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  background-image: url(assets/Images/pup.jpg);
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border: solid 4px rgb(253, 208, 9);
+  margin-right: 30px;
+}
+
+.project4 {
+display: flex;
+flex-direction: row;
+flex-grow: 1;
+background-image: url(./images/nala.jpeg);
+height: 150px;
+background-size: cover;
+background-position: center;
+justify-content: flex-start;
+align-items: flex-end;
+border: solid 4px rgb(253, 208, 9);
+margin-right: 30px;
+}
+
+.project5 {
+display: flex;
+flex-direction: row;
+flex-grow:1;
+background-image: url(./images/hedge.JPG);
+height: 150px;
+background-size: cover;
+background-position: center;
+justify-content: flex-start;
+align-items: flex-end;
+border: solid 4px rgb(253, 208, 9);
+margin-right: 30px;
+}
+
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
   align-items: center;
+  justify-content: space-between;
+  min-width: 300px;
+  margin-right: 20px;
+
 }
 
-.flex-row select {
-  flex: 1 0 0;
-  margin-left: 2%;
+#footer a {
+  font-weight: bold;
+  color: navy;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: solid 2px navy;
+  margin-right: 3px;
 }
 
-.flex-row input {
-  margin-right: 2%;
-}
-
-/* What does this selector do? */
-.checkbox:checked + label {
-  color: #999999;
-  font-style: italic;
-}
-
-/* What does this selector do? */
-.checkbox:checked + label::after {
-  margin-left: 10px;
-  font-size: 90%;
-  content: "(thanks!)";
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  padding: 2%;
-  background-color: #13293d;
-  color: #fff;
-}
-
-@media screen and (max-width: 768px) {
-  header {
+/* Tablets */
+@media screen and (max-width:952px) {
+section {
     flex-direction: column;
-  }
+}
+header {
+    display: flex;
+flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+h1 {
+    width: 100%;
+    padding: 0px;
+}
+
+nav {
+
+    padding-bottom: 15px;
+}
+
+.aboutme0, .contact {
+    height: fit-content;
+    border-right: 0px;
+    border-bottom: solid 4px navy ;
+    text-align: start;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.work {
+    height: fit-content;
+    border-right: 0px;
+    border-bottom: solid 4px navy ;
+    text-align: start;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.mainwork, .worksection1, .aboutme, .worksection2, .worksection3, #footer {
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.mainwork {
+max-height: 150px;
+
+}
+
+.work2, .work4 {
+margin-right: 0px;
+}
+}
+
+/* Smartphones */
+@media screen and (max-width:700px) {
+
+
+.aboutme {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mainwork, .worksection2, .worksection3 {
+    margin-left: 10px;
+    /* max-height: 150px; */
+    flex-wrap: wrap;
+}
+
+.worksection2 {
+    margin-bottom: 0px;
+}
+.work1 .work2, .work3, .work4, .mainwork{
+    margin-right: 10px;
+}
+
+.work1, .work2, .work3, .work4 {
+    min-width: 100%;
+    margin-bottom: 30px;
+}
 }
