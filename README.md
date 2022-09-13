@@ -2,7 +2,7 @@
 
 This is my Professional Portfolio!
 
-I have learned so far HTML and CSS which i used in making this website.
+What i have learned so far is HTML and CSS which i used in making this website.
 
 Here are some links to get around my site
 https://github.com/Tvanmeveren/Professional-Portfolio.git
