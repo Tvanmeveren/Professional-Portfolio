@@ -25,10 +25,8 @@ body {
   align-items: center;
 }
 
-.header1{
-display: flex;
 
-}
+
 h1 {
   font-family: 'Times New Roman', Times, serif;
   color: rgb(19, 18, 18);
