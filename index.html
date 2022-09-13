@@ -1,115 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-----------------------------------------------Here is the start of my coding i linked my index page to the style.css-------------------->
+<!-------------------------------------------------I connected my page to make it mobile friendly------------------------------------------>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tyler Van Meveren</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tyler Van Meveren's Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css"/>
 </head>
-
+<!----------------------Below is where i start my project  it comprises of 3 main parts: header section, main content, and footer------------->
 <body>
-    <header>
-        <h1>Tyler Van Meveren</h1>
-        <nav>
-            <ul>
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                <li><a href= target="_blank">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
-    <figure class="Little-Boxes">
-        <figcaption class="Cap-Box">Coding is life</figcaption>
-        <p style="background-image: url('/assets/Images/dark-blue.jpg');"></p>
-    </figure>
-    <section id="aboutme">
-        <div>
-            <h2 class="about-Me">About <br>Me</br></h2>
+ 
+<section>
+  <!-------------------------------Here is where i started the main header with my name and links to navagate through my site-->
+  <!-------------------------------------I put the # sign on each of my links to link them to the section they will click too-->
+  <header class="main-header">
+
+    <h1>Tyler Van Meveren</h1>
+    <nav>
+      <ul class="links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#work">My Work</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+  <header class="header"> 
+    <p>Coding is the future</p>
+  </header>
+  <!------------------------------------Here is where i put the main content the about me, my work and contact info-->
+</section>
+<!-------------------------------------------Here is where i put the about me section where i talk a little about myself-->
+  <section class="content">
+    <article id="about">
+      <h2 class="story">About Me</h2>
+      <img class="Tyler" src="./assets/Images/Ty.jpg" alt="Image of Tyler Van Meveren" />
+      <p class="About-me"> A little about me, I have my AAS's in software development and Webdesign. I currently work at an Insurance agency, On my free time i love to play with my animals, play sports and relax with a good movie.
+      </P>
+    </article>
+    <!------------------------------------------This is where i show my current and future work-------------------->
+    <article id="work">
+      <h2 >My Work</h2>
+      <div class="Challenges">
+        <div class="Challenge">
+          <h3>A prework Study Guide</h3>
+          <a href=" https://tvanmeveren.github.io/prework-study-guides/"><img class="PSG"
+              src="./assets/Images/pre-work.png" alt="Pre-work Study guide" />
+          </a>
         </div>
-        <div class="aboutme">
-            <img src="./Assets/images/Ty.jpg">
-            <p>A little about myself: I grew up around computers mostly playing video games and always have been interested in learning front end and backend development. I currently have my AAS degrees in Software development and Web design.I currently work at an insurance agency but on my free time i like to play and watch sports.</p>
+        <div class="Challenge">
+          <h3>Challenge 1</h3>
+          <a href=" https://tvanmeveren.github.io/Challenge1/">
+            <img class="detail" src="./assets/Images/Ch1.png" alt="Challenge1" />
+          </a>
         </div>
-    </section>
-
-    <section class="working" id="work">
-        <div>
-            <h2 class="work"> My Work</h2>
+        <div class="Challenge">
+          <h3>Project coming soon</h3>
+          <img class="detail" src="./assets/Images/battle.jpg" alt="Upcoming work" />
         </div>
-        <div class="Pre-Study">
-            <a href="https://www.yahoo.com/" target="_blank">
-                <section>
-                    <figure class="mainwork">
-                    
-                        <figcaption class="Little-Box">
-                            <h3>Project One</h3>
-                            Project One Description!
-                        </figcaption>
-                    </figure>
-                </section>
-            </a>
-
-
-            <section class="working2">
-                <a href="https://www.yahoo.com" target="_blank" class=project2>
-                    <figure>
-                        <figcaption class="Little-Box">
-                            <h3>Project Two</h3>
-                            Project Two Description!
-                        </figcaption>
-                    </figure>
-                </a>
-
-
-                <a href="https://www.yahoo.com" target="_blank" class="project3">
-                    <figure>
-                        <figcaption class="Little-Box">
-                            <h3>Project Three</h3>
-                            Project Three Description!
-                        </figcaption>
-                    </figure>
-                </a>
-            </section>
-            <section class="working3">
-                <a href="https://www.yahoo.com" target="_blank" class="project4">
-                    <figure>
-                        <figcaption class="Little-Box">
-                            <h3>Project Four</h3>
-                            Project Four Description!
-                        </figcaption>
-                    </figure>
-                </a>
-
-
-                <a href="https://www.yahoo.com" target="_blank" class="project5">
-                    <figure>
-                        <figcaption class="Little-Box">
-                            <h3>Project Five</h3>
-                            Project Five Description!
-                        </figcaption>
-                    </figure>
-                </a>
-            </section>
+        <div class="Challenge">
+          <h3 >Project coming soon</h3>
+          <img class="detail" src="./assets/Images/pup.jpg" alt="Upcoming Work" />
         </div>
-    </section>
+      </div>
+    </article>
 
 
-    <section id="contact">
-        <div>
-            <h2 class="contact">Contact <br>Me</br></h2>
-        </div>
-        <div id="footer">
-            <a href="tel:7635280343">763-528-0343</a>
-            <a href="mailto:Tyvan07@yahoo.com">Tyvan07@yahoo.com</a>
-            <a href="https://github.com/Tvanmeveren" target="_blank">GitHub</a>
-            
-        </div>
-    </section>
-
+    <!------------------------------------------------Here is the start of my contact info------------------>
+    <!-------------------------------------------------I use a few outside links to connect to my website-->
+    <article id="contact" class="email">
+      <h2 class="email">Contact me</h2>
+      <ul class="links">
+        <li><a href="mailto:Tyvan07@yahoo.com">Tyvan07@yahoo.com</a></li>  
+     <li><a href="https://github.com/Tvanmeveren"> github</a></li> 
+     <li id="resume"><a href="https://my.indeed.com/p/tylerv-zxpufsy"> Resume</a> </li>
+    </ul>
+     </article>
+  </section>
+  <!---------------------------------------------Here is the start of the footer i know i didnt need to have one but i was watching an owen wilson movie and thought this quote was funny-->
+  <section class=" Footer">
+    <footer>"My favorite quote: "Wow"-Owen Wilson</footer>
+  </section>
+  
 </body>
 
 </html>
